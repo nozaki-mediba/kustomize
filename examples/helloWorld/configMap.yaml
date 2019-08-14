@@ -4,4 +4,4 @@ metadata:
   name: the-map
 data:
   altGreeting: "Good Morning!2"
-  enableRisky: "false"
+  enableRisky: "true"
