@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: the-container
-        image: 899763172859.dkr.ecr.ap-northeast-1.amazonaws.com/nozaki/node-web-app:v3
+        image: 899763172859.dkr.ecr.ap-northeast-1.amazonaws.com/nozaki/node-web-app:v4
         # command: ["/hello",
         #           "--port=8080",
         #           "--enableRiskyFeature=$(ENABLE_RISKY)"]
