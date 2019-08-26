@@ -15,6 +15,11 @@ spec:
         # command: ["/hello",
         #           "--port=8080",
         #           "--enableRiskyFeature=$(ENABLE_RISKY)"]
+        envFrom:  # env ではなく envFrom
+        - secretRef:
+            name: mysecret # ConfigMap の name を指定。すべてのキーが環境変数として展開される
+          # prefix: MY_PREFIX_     # 名前衝突しないように prefix を指定することもできる
+        # Secret の場合は secretRef で Secret の name を指定
         ports:
         - containerPort: 8080
         env:
